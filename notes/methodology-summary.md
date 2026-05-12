@@ -1,9 +1,3 @@
-
----
-
-# 2. Replace `notes/methodology-summary.md`
-
-```markdown
 # Methodology Summary
 
 This file summarises the practical methodology followed in the 5G Mobile Computing lab.
