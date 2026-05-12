@@ -1,0 +1,23 @@
+# Redacted UERANSIM gNB configuration example for a Free5GC lab.
+# Replace placeholders before use. Values should match the Free5GC AMF/PLMN/slice settings.
+
+mcc: '208'                 # Mobile Country Code
+mnc: '93'                  # Mobile Network Code
+
+nci: '0x000000010'         # NR Cell Identity
+idLength: 32               # gNB ID length in bits
+tac: 1                     # Tracking Area Code, should match AMF supportTaiList
+
+linkIp: '<UERANSIM_VM_IP>' # Radio link simulation IP used by UE gnbSearchList
+ngapIp: '<UERANSIM_VM_IP>' # N2 interface IP used by gNB towards AMF
+gtpIp: '<UERANSIM_VM_IP>'  # N3 interface IP used by gNB towards UPF
+
+amfConfigs:
+  - address: '<FREE5GC_CORE_IP>'
+    port: 38412
+
+slices:
+  - sst: 0x01
+    sd: 0x010203
+
+ignoreStreamIds: true

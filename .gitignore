@@ -1,0 +1,40 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large files
+*.zip
+*.rar
+*.7z
+
+# VM / disk image files
+*.ova
+*.vdi
+*.vmdk
+*.iso
+*.qcow2
+
+# Packet capture files can be large/private
+*.pcap
+*.pcapng
+
+# Private/university documents
+*report*
+*submission*
+*feedback*
+*marking*
+*specification*
+*coursework*
+*brief*
+
+# Credentials / keys
+.env
+*.key
+*.pem
+passwords.txt
+credentials.txt
+
+# Temporary files
+tmp/
+temp/
+logs/
